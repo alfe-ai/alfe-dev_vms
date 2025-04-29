@@ -1,2 +1,2 @@
-# alfe-dev_vms
-alfe-dev_vms
+# alfe-dev-vms
+VMs for alfe-dev
