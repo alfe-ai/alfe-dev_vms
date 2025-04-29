@@ -1,2 +1,2 @@
-# alfe-dev_vms
-alfe-dev_vms
+# Alfe AI / Dev VMs
+VMs for Alfe AI Development
