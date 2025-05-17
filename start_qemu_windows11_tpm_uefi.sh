@@ -24,5 +24,6 @@ qemu-system-x86_64 \
   -chardev socket,id=chrtpm,path="$STATE_DIR/swtpm-sock" \
   -tpmdev emulator,id=tpm0,chardev=chrtpm \
   -device tpm-tis,tpmdev=tpm0 \
-  -drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE.secboot.fd \
-  -drive if=pflash,format=raw,file=/usr/share/OVMF/OVMF_VARS.fd
+  # UEFI firmware: CODE and VARS must match your /usr/share/OVMF filenames
+  -drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_CODE_4M.secboot.fd \
+  -drive if=pflash,format=raw,file=/usr/share/OVMF/OVMF_VARS_4M.fd
