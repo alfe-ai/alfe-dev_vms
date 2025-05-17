@@ -1,9 +1,14 @@
 #!/bin/bash
 
 DISK_IMAGE="/mnt/part7/windows11.qcow2"
-ISO_OPTIONS=""
 
-# If an ISO path is provided, add it to the QEMU options.
+# Check if disk image file exists
+if [ ! -f "$DISK_IMAGE" ]; then
+  echo "Error: Disk image '$DISK_IMAGE' not found."
+  exit 1
+fi
+
+ISO_OPTIONS=""
 if [ "$#" -ge 1 ]; then
   ISO_PATH="$1"
   ISO_OPTIONS="-cdrom $ISO_PATH -boot d"
