@@ -18,7 +18,7 @@ qemu-system-x86_64 \
   -enable-kvm \
   -m 4G \
   -cpu host \
-  -drive file=/mnt/part7/windows11.qcow2,format=qcow2 \
+  -drive file=/mnt/part7/windows10_051725.qcow2,format=qcow2 \
   -cdrom "$1" \
   -boot d \
   -chardev socket,id=chrtpm,path="$STATE_DIR/swtpm-sock" \
