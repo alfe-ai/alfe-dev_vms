@@ -12,11 +12,11 @@ echo "=== WoeUSB Windows 10 USB Creator (Verbose Mode) ==="
 read -rp "Enter the path to your Windows 10 ISO file (e.g. /home/user/Downloads/Windows10.iso): " ISO_PATH
 read -rp "Enter the target USB device path (e.g. /dev/sdb): " USB_DEVICE
 
-echo "=== Updating package lists ==="
-sudo apt update
+#echo "=== Updating package lists ==="
+#sudo apt update
 
-echo "=== Installing woeusb-ng ==="
-sudo apt install -y woeusb-ng
+#echo "=== Installing woeusb-ng ==="
+#sudo apt install -y woeusb-ng
 
 echo "=== Running WoeUSB with debug info ==="
 set -x
